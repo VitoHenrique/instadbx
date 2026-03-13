@@ -1,0 +1,10 @@
+# Protege o banco de dados de acesso direto
+<Files "*">
+    Require all denied
+</Files>
+
+# Alternativa para Apache mais antigo
+<IfModule !mod_authz_core.c>
+    Order deny,allow
+    Deny from all
+</IfModule>
